@@ -2,9 +2,9 @@ import Image from 'next/image';
 import ReservationSidebar from '@/app/components/properties/ReservationSidebar';
 const PropertyDetailPage = () => {
     return (
-        <div className="max-w-[1500px] mx-auto px-6">
+        <div className="max-w-[1500px] mx-auto px-6  pb-6">
 
-            <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative pb-6 ">
+            <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative ">
                 <Image src="/beach-1.jpeg" className="object-cover w-full h-full" layout="fill" objectFit="cover" alt="Beach" />
             </div>
 
