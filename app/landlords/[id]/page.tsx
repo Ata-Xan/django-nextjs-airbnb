@@ -18,8 +18,6 @@ const LandlordsPage = () => {
                 <div className="col-span-1 md:col-span-3 pl-0 md:pl-6">
                     <PropertyList/>
                 </div>
-
-
             </div>
         </div>
     );
