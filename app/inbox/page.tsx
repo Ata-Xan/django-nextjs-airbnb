@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ReservedProperty from '../components/ReservedProperty';
-import Conversation from '../components/inbox/conversation';
+import Conversation from '../components/inbox/ConversationList';
 
 
 const InboxPage = () => {
