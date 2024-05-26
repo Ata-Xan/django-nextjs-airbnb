@@ -19,6 +19,30 @@ const apiService = {
                     reject(error)
                 });
         })
+    },
+
+
+    post: async function (url: string, data: any): Promise<any> {
+        console.log('post', url, data)
+        return new Promise((resolve, reject) => {
+            fetch(`${process.env.NEXT_PUBLIC_API_URL}${url}`, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: data
+            })
+                .then(response => response.json())
+                .then((json) => {
+                    // the resolve function is called when the promise is resolved and the data is returned
+                    resolve(json)
+                })
+                .catch((error) => {
+                    console.error('error:', error)
+                    reject(error)
+                });
+        })
     }
 
 }
